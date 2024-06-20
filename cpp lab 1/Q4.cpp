@@ -10,7 +10,7 @@ double area(double side)
     return 6 * side * side;
 }
 
-float area(float radius)
+float area(float radius, int dummy)
 {
     const float pi = 3.149;
     return pi * radius * radius;
@@ -24,7 +24,7 @@ int main()
     cout << "Surface area of cube: " << area(6) << endl;
     cout << "Enter radius of circle: ";
     cin >> radius;
-    cout << "Area of circle: " << area(radius) << endl;
+    cout << "Area of circle: " << area(radius, 0) << endl;
 
     cout << "Enter length and width of rectangle: ";
     cin >> length >> width;
