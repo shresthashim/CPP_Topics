@@ -1,0 +1,8 @@
+# Ignore all .exe files
+*.exe
+
+# Other ignore rules can go here
+*.log
+*.tmp
+node_modules/
+dist/
