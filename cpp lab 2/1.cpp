@@ -1,4 +1,4 @@
-//Program to calculate distance between two points (Each point is represented in m, km) using OOP concept
+// Program to calculate distance between two points (Each point is represented in m, km) using OOP concept
 
 #include <iostream>
 #include <cmath>
@@ -6,45 +6,69 @@
 
 using namespace std;
 
-class Point {
-public:
-    double x; // in meters
-    double y; // in kilometers
+class Staff
+{
 
-    void setCoordinates(double xc, double yc) {
-        x = xc;
-        y = yc;
+public:
+    int code;
+    string name;
+
+public:
+    void getdata()
+    {
+        cout << "Enter code: ";
+        cin >> code;
+        cout << "Enter name: ";
+        cin.ignore();
+        getline(cin, name);
     }
 
-    void convertToKm() {
-        x /= 1000.0;
+    void putdata()
+    {
+        cout << "Code: " << code << endl;
+        cout << "Name: " << name << endl;
     }
 };
 
-double calculateDistance(Point p1, Point p2) {
-    p1.convertToKm();
-    p2.convertToKm();
-    return sqrt(pow(p2.x - p1.x, 2) + pow(p2.y - p1.y, 2));
-}
+class Teacher : public Staff
+{
+private:
+    string subject;
 
-int main() {
-    double x1, y1, x2, y2;
+public:
+    void getdata()
+    {
+        cout << "Enter subject: ";
+        getline(cin, subject);
+    }
 
-    cout << "Enter the coordinates of the first point (m, km): ";
-    cin >> x1 >> y1;
+    void putdata()
+    {
+        cout << "Subject: " << subject << endl;
+    }
+};
 
-    cout << "Enter the coordinates of the second point (m, km): ";
-    cin >> x2 >> y2;
+int main()
+{
+    Staff s[3];
+    Teacher t[3];
 
-    Point point1;
-    Point point2;
+    for (int i = 1; i <= 3; ++i) // Corrected indices
+    {
 
-    point1.setCoordinates(x1, y1);
-    point2.setCoordinates(x2, y2);
+        t[i].getdata();
+    }
+    int code;
 
-    double distance = calculateDistance(point1, point2);
+    cout << "Enter code to search: ";
+    cin >> code;
 
-    cout << "The distance between the points is: " << distance << " km" << endl;
-
+    for (int i = 1; i <= 3; ++i) // Corrected indices
+    {
+        if (s[i].code == code)
+        {
+            t[i].putdata(); // Assuming there's a logical correction for linking Staff and Teacher
+        }
+    }
     return 0;
 }
