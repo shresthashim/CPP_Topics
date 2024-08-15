@@ -72,7 +72,7 @@ private:
         ifstream file("customers.txt");
         if (!file.is_open())
         {
-            ofstream outfile("customers.txt"); 
+            ofstream outfile("customers.txt");
             outfile.close();
             return;
         }
@@ -225,6 +225,7 @@ public:
 bool login(string &role)
 {
     string username, password;
+    cout << "==========LOGIN==========\n";
     cout << "Enter username: ";
     cin >> username;
     cout << "Enter password: ";
@@ -254,7 +255,7 @@ int main()
 
     if (!login(role))
     {
-        return 1; 
+        return 1;
     }
 
     while (true)
