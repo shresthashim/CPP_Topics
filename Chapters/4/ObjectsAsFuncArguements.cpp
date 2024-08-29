@@ -12,6 +12,8 @@ public:
         real = r;
         imag = i;
     }
+
+    // Complex(int r = 0, int i = 0) : real(r), imag(i) {} // Another way to initialize called member initializer list
     void print()
     {
         cout << real << " + i" << imag << endl;
