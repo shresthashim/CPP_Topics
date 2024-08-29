@@ -18,7 +18,7 @@ int main()
     {
         sum += arr[i];
     }
-    cout << "Average: " << (double)sum / n << endl;
+    cout << "Average: " << (double)sum / n << endl;  // Typecasting sum to double ... we can also do double(sum) / n
     delete[] arr;
     return 0;
 }
