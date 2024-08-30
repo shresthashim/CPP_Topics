@@ -8,3 +8,8 @@ node_modules/
 dist/
 
 settings.json
+
+#for .txt
+
+*.txt
+

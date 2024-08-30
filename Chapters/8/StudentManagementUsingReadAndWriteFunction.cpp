@@ -62,6 +62,8 @@ int main()
         s.addStudent();
     }
     cout << "\nDisplaying details for all students:" << endl;
+
     s.displayStudent();
+
     return 0;
 }
