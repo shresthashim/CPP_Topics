@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-template <class T, int size>
+template <class T, int size> // Size is a non-type template parameter
 class Array
 {
     T arr[size]; // Fixed-size array

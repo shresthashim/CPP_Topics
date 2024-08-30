@@ -22,7 +22,7 @@ public:
     void show();
 };
 
-template <class T1, class T2, class T3>
+template <class T1, class T2, class T3> // Member function of a class template defined outside the class
 void Record<T1, T2, T3>::show()
 {
     cout << "a: " << a << endl;
