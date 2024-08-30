@@ -41,18 +41,6 @@ public:
         fin.close();
     }
 
-    void displayAll()
-    {
-        fstream fout;
-        fout.open("studentsearch.txt", ios::in);
-        Student s;
-        while (fout.read((char *)&s, sizeof(s)))
-        {
-            s.displayData();
-        }
-        fout.close();
-    }
-
     void searchStudent(int rollNo)
     {
         fstream fout;
@@ -82,11 +70,11 @@ public:
         {
             s.addStudent();
         }
-        // s.displayAll();
+       
         cout << "Enter the roll number to search: ";
         int rollNo;
         cin >> rollNo;
         s.searchStudent(rollNo);
-        
+
         return 0;
     }
