@@ -28,7 +28,7 @@ int main()
     obj.getValue(); // Allowed because getValue() is const
 
     MyClass const constObj(20); // Constant object
-    constObj.getValue();        // Allowed because printValue() is const
+    constObj.getValue();        // Allowed because getValue() is const
 
     // constObj.getValue1(); // Error as getValue1() is not a constant member function
 
