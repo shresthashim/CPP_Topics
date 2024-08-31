@@ -19,21 +19,14 @@ public:
 
 class Derived : public Base<int>
 {
-    int value;
 
 public:
-    Derived(int a, int b) : Base<int>(a), value(b) {}
-
-    void display()
-    {
-        Base<int>::display();
-        cout << "Value in Derived: " << value << endl;
-    }
+    Derived(int a) : Base<int>(a) {}
 };
 
 int main()
 {
-    Derived d(10, 20);
+    Derived d(10);
     d.display();
     return 0;
 }
