@@ -10,7 +10,7 @@ double calculateSquareRoot(double number)
     {
         throw invalid_argument("Cannot calculate square root of a negative number."); // Throw exception
     }
-    return sqrt(number); // Calculate square root
+    return sqrt(number); 
 }
 
 int main()
