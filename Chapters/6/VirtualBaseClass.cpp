@@ -20,20 +20,12 @@ class C : virtual public A
 
 class D : public B, public C
 {
-    public:
-    void showD()
-    {
-        show();
-    }
 };
 
 int main()
 {
     D obj;
-    // obj.show(); // Error: Ambiguity ... we can resolve this by using virtual base class
-    obj.showD();
-
-
+    obj.show(); // Only one set of members is accessed from A
 
     return 0;
 }
