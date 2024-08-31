@@ -17,7 +17,7 @@ public:
 class Derived : public Base
 {
 public:
-    Derived(int x)
+    Derived(int x) 
     {
         cout << "Constructor of Derived class with value " << x << endl;
     }
