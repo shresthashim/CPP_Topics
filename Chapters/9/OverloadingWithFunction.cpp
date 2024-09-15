@@ -24,7 +24,8 @@ int main()
     display(intValue);
 
     // Calls template function for double
-    display(doubleValue);
+    display
+    (doubleValue);
 
     // Calls template function for string
     display(stringValue);

@@ -23,9 +23,6 @@ public:
 int main()
 {
 
-    int size;
-    cout << "Enter the size of the array: ";
-    cin >> size;
     Array a;
     cout << "Enter the elements: ";
     for (int i = 0; i < MAX; i++)
